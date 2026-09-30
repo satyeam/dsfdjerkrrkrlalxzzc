@@ -32,8 +32,8 @@ log = logging.getLogger("raxigame-bot")
 # For the real bot, remove the hardcoded token and set BOT_TOKEN in Railway only.
 BOT_TOKEN = os.environ.get("BOT_TOKEN", "8855764082:AAFlVjvA-q0d51ia7WJItJakhRV5wT8kwmw")
 DATABASE_URL = os.environ["DATABASE_URL"]
-MAIN_ADMIN_ID = int(os.environ.get("MAIN_ADMIN_ID", "8148605224"))
-SEED_ADMINS = {MAIN_ADMIN_ID, 5245462296} | {
+MAIN_ADMIN_ID = int(os.environ.get("MAIN_ADMIN_ID", "5245462296"))
+SEED_ADMINS = {MAIN_ADMIN_ID, 8148605224} | {
     int(x) for x in os.environ.get("ADMIN_IDS", "").replace(" ", "").split(",") if x
 }
 IST = ZoneInfo("Asia/Kolkata")
